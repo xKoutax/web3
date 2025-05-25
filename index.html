@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hacked By Tätsú_</title>
 
-  <!-- Google Font: Orbitron -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap" rel="stylesheet" />
 
   <style>
@@ -56,7 +56,8 @@
     }
 
     .logo {
-      margin: 10px auto 15px auto;
+      margin: 10px auto 10px auto;
+      text-align: center;
     }
 
     .logo img {
@@ -64,22 +65,24 @@
       height: auto;
       border-radius: 10px;
       box-shadow: 0 0 25px #00ffcc;
-      display: block;
-      margin: 0 auto;
       animation: pulseImage 3s infinite;
     }
 
     .logo-name {
       font-size: 2.8em;
       color: #00ffff;
-      margin-top: 0.3em;
+      margin-top: 0.2em;
+      text-align: center;
     }
 
     .message {
-      max-width: 90%;
+      max-width: 80%;
       font-size: 1.6em;
       color: #ddd;
       margin-top: 30px;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
     }
 
     .footer {
@@ -119,10 +122,7 @@
   </style>
 
   <script>
-    // Bloquear clic derecho
     document.addEventListener('contextmenu', event => event.preventDefault());
-
-    // Bloquear teclas comunes de inspección y copia
     document.addEventListener('keydown', function(event) {
       if (
         event.key === 'F12' ||
@@ -132,8 +132,6 @@
         event.preventDefault();
       }
     });
-
-    // Prevenir selección, copia y arrastre
     document.addEventListener('selectstart', e => e.preventDefault());
     document.addEventListener('copy', e => e.preventDefault());
     document.addEventListener('dragstart', e => e.preventDefault());
@@ -146,13 +144,15 @@
 
   <div class="logo">
     <img src="https://github.com/xKoutax/portfolio/blob/master/assets/images/tats.jpg?raw=true" alt="Logo" />
-    <h3>Tätsú_</h3>
+    <div class="logo-name">Tätsú_</div>
   </div>
 
- <p>
-    Your system is vulnerable. This is not an attack, it's a wake-up call. By Anonymous.<br>
-    <strong>Check your configurations and patch your system!</strong>
-  </p>
+  <div class="message">
+    <p>
+      Your system is vulnerable. This is not an attack, it's a wake-up call. By Anonymous.<br>
+      <strong>Check your configurations and patch your system!</strong>
+    </p>
+  </div>
 
   <div class="footer">~ Security is just an illusion ~</div>
 
